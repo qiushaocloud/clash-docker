@@ -1,0 +1,9 @@
+*.md linguist-language=DockerFile 
+*.yml linguist-language=DockerFile 
+*.html linguist-language=DockerFile 
+*.js linguist-language=DockerFile 
+*.xml linguist-language=DockerFile
+*.css linguist-language=DockerFile 
+*.sql linguist-language=DockerFile
+*.uml linguist-language=DockerFile 
+*.cmd linguist-language=DockerFile
