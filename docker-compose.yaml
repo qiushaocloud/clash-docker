@@ -1,0 +1,19 @@
+version: "3"
+services:
+  qiushaocloud-clash-server:
+    image: dreamacro/clash:latest
+    container_name: qiushaocloud-clash-server
+    hostname: qiushaocloud-clash-server
+    #network_mode: "host"
+    ports:
+      - "$CLASH_MIXED_PORT:$CLASH_CFG_MIXED_PORT"
+      - "$CLASH_EXTERNAL_CONTROLLER_PORT:$CLASH_CFG_EXTERNAL_CONTROLLER_PORT"
+    volumes:
+      - $CONFIG_YAML_FILE_PATH:/root/.config/clash/config.yaml
+      
+  qiushaocloud-clash-dashboard-server:
+    image: haishanh/yacd:latest
+    container_name: qiushaocloud-clash-dashboard-server
+    hostname: qiushaocloud-clash-dashboard-server
+    ports:
+      - "$DASHBOARD_WEB_PORT:80"
