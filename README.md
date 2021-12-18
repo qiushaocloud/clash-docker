@@ -1,23 +1,17 @@
 # clash-docker
 
 #### 介绍
-this is linux/ubuntu  clash docker
+这是一个 linux/ubuntu 使用的 clash docker ，请使用 docker-compose 跑起来，需要自己映射 config.yaml ，配置信息在 .env 文件配置
 
 #### 软件架构
 软件架构说明
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  配置 .env, 根据配置创建好相应的 config.yaml
+2.  运行 ./run-docker.sh
+3.  查看日志: docker logs qiushaocloud-clash-server
+4.  ubuntu 设置代理: ./ubuntu-bind-proxy.sh
 
 #### 参与贡献
 
@@ -27,11 +21,10 @@ this is linux/ubuntu  clash docker
 4.  新建 Pull Request
 
 
-#### 特技
+#### 分享者信息
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1. 分享者邮箱: qiushaocloud@126.com
+2. [分享者网站](https://www.qiushaocloud.top)
+3. [分享者自己搭建的 gitlab](https://www.qiushaocloud.top/gitlab) 
+3. [分享者 gitee](https://gitee.com/qiushaocloud/dashboard/projects) 
+3. [分享者 github](https://github.com/qiushaocloud?tab=repositories) 

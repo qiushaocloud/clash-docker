@@ -1,36 +1,27 @@
 # clash-docker
 
-#### Description
-this is linux/ubuntu  clash docker
+#### introduce
+This is a clash docker used by linux/ubuntu, please use docker-compose to run it, you need to map config.yaml yourself, and the configuration information is configured in the .env file
 
-#### Software Architecture
-Software architecture description
+#### Instructions for use
 
-#### Installation
+1. Configure .env and create the corresponding config.yaml according to the configuration
+2. Run ./run-docker.sh
+3. View logs: docker logs qiushaocloud-clash-server
+4. ubuntu set proxy: ./ubuntu-bind-proxy.sh
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### Participate in Contribution
 
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+1. Fork this warehouse
+2. Create new Feat_xxx branch
+3. Submit the code
+4. New Pull Request
 
 
-#### Gitee Feature
+#### Sharer information
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1. Sharer's email: qiushaocloud@126.com
+2. [Sharer's website](https://www.qiushaocloud.top)
+3. [gitlab built by the sharer](https://www.qiushaocloud.top/gitlab)
+3. [Sharer gitee](https://gitee.com/qiushaocloud/dashboard/projects)
+3. [Sharer github](https://github.com/qiushaocloud?tab=repositories)
