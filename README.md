@@ -3,9 +3,6 @@
 #### 介绍
 这是一个 linux/ubuntu 使用的 clash docker ，请使用 docker-compose 跑起来，需要自己映射 config.yaml ，配置信息在 .env 文件配置
 
-#### 软件架构
-软件架构说明
-
 #### 使用说明
 
 1.  配置 .env, 根据配置创建好相应的 config.yaml
