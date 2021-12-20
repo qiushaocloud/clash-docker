@@ -13,3 +13,5 @@
 .nfs*
 
 .gitee
+
+.env
