@@ -5,7 +5,7 @@
 
 #### 使用说明
 
-1.  配置 .env, 根据配置创建好相应的 config.yaml
+1.  配置 .env(参考env-template), 根据配置创建好相应的 config.yaml
 2.  运行 ./run-docker.sh
 3.  查看日志: docker logs qiushaocloud-clash-server
 4.  ubuntu 设置代理: ./ubuntu-bind-proxy.sh
