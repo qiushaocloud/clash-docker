@@ -5,7 +5,7 @@ This is a clash docker used by linux/ubuntu, please use docker-compose to run it
 
 #### Instructions for use
 
-1. Configure .env(refer to env-template) and create the corresponding config.yaml according to the configuration
+1. Configure .env(refer to env.template) and create the corresponding config.yaml according to the configuration
 2. Run ./run-docker.sh
 3. View logs: docker logs qiushaocloud-clash-server
 4. ubuntu set proxy: ./ubuntu-bind-proxy.sh
