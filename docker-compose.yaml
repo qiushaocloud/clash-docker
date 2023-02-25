@@ -6,7 +6,8 @@ services:
     hostname: qiushaocloud-clash-server
     #network_mode: "host"
     ports:
-      - "$CLASH_MIXED_PORT:$CLASH_CFG_MIXED_PORT"
+      - "$CLASH_MIXED_PORT:$CLASH_CFG_MIXED_PORT/tcp"
+      - "$CLASH_MIXED_PORT:$CLASH_CFG_MIXED_PORT/udp"
       - "$CLASH_EXTERNAL_CONTROLLER_PORT:$CLASH_CFG_EXTERNAL_CONTROLLER_PORT"
     volumes:
       - $CONFIG_YAML_FILE_PATH:/root/.config/clash/config.yaml
