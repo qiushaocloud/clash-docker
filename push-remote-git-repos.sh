@@ -7,10 +7,10 @@ git remote set-url origin ssh://git@www.qiushaocloud.top:61023/qiushaocloud/$git
 git push
 
 # 推送到 gitee
-git remote set-url origin git@gitee.com:qiushaocloud/$gitName
-git push
+# git remote set-url origin git@gitee.com:qiushaocloud/$gitName
+# git push
 
-# 推送到 github
+# # 推送到 github
 git remote set-url origin git@github.com:qiushaocloud/$gitName
 git push
 
