@@ -7,7 +7,7 @@ sync-code:
     - master
   script:
     - mkdir -p /root/codes && cd /root/codes
-    - cat /root/.ssh/id_rsa
+    - chmod 600 /root/.ssh/id_rsa
     - yes | git clone ssh://git@gitlab.qiushaocloud.top:61023/qiushaocloud/clash-docker.git
     - cd clash-docker
     - git branch -a
