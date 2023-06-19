@@ -6,7 +6,7 @@ sync-code:
   only:
     - master
   script:
-    - export GIT_NAME=`grep -E "url = .*.git" $CURR_DIR/.git/config|awk -F 'qiushaocloud/' '{print $2}'`
+    - export GIT_NAME=`grep -E "url = .*.git" $PWD/.git/config|awk -F 'qiushaocloud/' '{print $2}'`
     - echo "GIT_NAME:$GIT_NAME"
     - export GIT_NAME_DIR=`echo $GIT_NAME | sed s/\.git//g`
     - echo "GIT_NAME_DIR:$GIT_NAME_DIR"
