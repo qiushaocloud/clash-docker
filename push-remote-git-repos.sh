@@ -16,7 +16,7 @@ echo "gitName: $gitName"
 # 推送到 gitee
 echo "推送到 gitee: git@gitee.com:qiushaocloud/$gitName"
 git remote set-url origin git@gitee.com:qiushaocloud/$gitName
-git push origin master
+git push
 
 # 推送到 github
 echo "推送到 github: git@github.com:qiushaocloud/$gitName"
