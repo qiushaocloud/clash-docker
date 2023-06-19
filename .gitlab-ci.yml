@@ -6,9 +6,10 @@ sync-code:
   only:
     - master
   script:
-    - cat .git/config
+    - mkdir -p /root/codes && cd /root/codes
+    - yes | git clone ssh://git@gitlab.qiushaocloud.top:61023/qiushaocloud/clash-docker.git
+    - cd clash-docker
     - git branch -a
-    - git checkout master
     - cat .git/config
     - git branch -a
     - sh push-remote-git-repos.sh
