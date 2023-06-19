@@ -8,6 +8,7 @@ sync-code:
   script:
     - mkdir -p /root/codes && cd /root/codes
     - chmod 600 /root/.ssh/id_rsa
+    - GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
     - git clone ssh://git@gitlab.qiushaocloud.top:61023/qiushaocloud/clash-docker.git
     - cd clash-docker
     - sh push-remote-git-repos.sh
