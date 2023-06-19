@@ -6,10 +6,11 @@ sync-code:
   only:
     - master
   script:
+    - export GIT_NAME_DIR=`grep -E "url = .*.git" $CURR_DIR/.git/config|awk -F 'qiushaocloud/' '{print $2}'| sed s/\.git//g`
     - mkdir -p /root/codes && cd /root/codes
     - chmod 600 /root/.ssh/id_rsa
-    - GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone ssh://git@gitlab.qiushaocloud.top:61023/qiushaocloud/clash-docker.git
-    - cd clash-docker
+    - GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone ssh://git@gitlab.qiushaocloud.top:61023/qiushaocloud/$GIT_NAME_DIR.git
+    - cd $GIT_NAME_DIR && echo `pwd`
     - sh push-remote-git-repos.sh
   tags:
     - qiushaocloud-runner
