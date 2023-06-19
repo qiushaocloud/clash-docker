@@ -10,9 +10,9 @@ gitName=`grep -E "url = .*.git" $CURR_DIR/.git/config|awk -F 'qiushaocloud/' '{p
 echo "gitName: $gitName"
 
 # 推送到 gitee
-echo "推送到 gitee: git@gitee.com:qiushaocloud/$gitName"
-git remote set-url origin git@gitee.com:qiushaocloud/$gitName
-git push
+#echo "推送到 gitee: git@gitee.com:qiushaocloud/$gitName"
+#git remote set-url origin git@gitee.com:qiushaocloud/$gitName
+#git push
 
 # 推送到 github
 echo "推送到 github: git@github.com:qiushaocloud/$gitName"
