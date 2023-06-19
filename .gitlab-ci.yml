@@ -8,11 +8,8 @@ sync-code:
   script:
     - mkdir -p /root/codes && cd /root/codes
     - chmod 600 /root/.ssh/id_rsa
-    - yes | git clone ssh://git@gitlab.qiushaocloud.top:61023/qiushaocloud/clash-docker.git
+    - git clone ssh://git@gitlab.qiushaocloud.top:61023/qiushaocloud/clash-docker.git
     - cd clash-docker
-    - git branch -a
-    - cat .git/config
-    - git branch -a
     - sh push-remote-git-repos.sh
   tags:
     - qiushaocloud-runner
