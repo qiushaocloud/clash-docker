@@ -6,10 +6,13 @@ sync-code:
   only:
     - master
   script:
-    - export GIT_NAME_DIR=`grep -E "url = .*.git" $CURR_DIR/.git/config|awk -F 'qiushaocloud/' '{print $2}'| sed s/\.git//g`
+    - export GIT_NAME=`grep -E "url = .*.git" $CURR_DIR/.git/config|awk -F 'qiushaocloud/' '{print $2}'`
+    - echo "GIT_NAME:$GIT_NAME"
+    - export GIT_NAME_DIR=`echo $GIT_NAME | sed s/\.git//g`
+    - echo "GIT_NAME_DIR:$GIT_NAME_DIR"
     - mkdir -p /root/codes && cd /root/codes
     - chmod 600 /root/.ssh/id_rsa
-    - GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone ssh://git@gitlab.qiushaocloud.top:61023/qiushaocloud/$GIT_NAME_DIR.git
+    - GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone ssh://git@gitlab.qiushaocloud.top:61023/qiushaocloud/$GIT_NAME
     - cd $GIT_NAME_DIR && echo `pwd`
     - sh push-remote-git-repos.sh
   tags:
