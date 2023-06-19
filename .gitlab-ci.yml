@@ -6,6 +6,7 @@ sync-code:
   only:
     - master
   script:
+    - cat .git/config
     - sh push-remote-git-repos.sh
   tags:
     - qiushaocloud-runner
