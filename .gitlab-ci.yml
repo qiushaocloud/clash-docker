@@ -7,7 +7,10 @@ sync-code:
     - master
   script:
     - cat .git/config
+    - git branch -a
     - git checkout master
+    - cat .git/config
+    - git branch -a
     - sh push-remote-git-repos.sh
   tags:
     - qiushaocloud-runner
